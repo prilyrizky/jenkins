@@ -1,8 +1,10 @@
 pipeline {
-  agent { dockerfile true}
-  stages {
-    stage('Test'){
-      steps {
-      echo "Testing"
-      }
-    }}
+    agent { dockerfile true}
+    stages {
+        stage('Test'){
+            steps{
+                echo 'Testing docker'
+            }
+        }
+    }
+}
